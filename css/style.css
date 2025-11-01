@@ -16,6 +16,7 @@ body {
   line-height: 1.7;
   color: #1f2937;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin-right: 20px;
   min-height: 100vh;
 }
 
@@ -55,27 +56,25 @@ button::after {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
-/* Header Section with Gradient */
-.head {
-  background: linear-gradient(135deg, #667eea 0%, #8a47cd 100%);
-  padding: 16px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+ .logo-img {
+  max-width: 200px;
   height: auto;
-}
-.logo img {
-  height: 30px;
-  display: block;
-  margin: 0 auto;
   border-radius: 25%;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  border: 3px solid white;
-  float: left;
 }
-
+.head{
+  background: linear-gradient(135deg,#6587d1,#b58ff6 );
+  color: white;
+  padding: 20px 16px;
+  width: 100%;
+  margin: 0;  
+  height: fit-content;
+}
 .heading {
   background: linear-gradient(135deg,#517edf,#7c3aed );
   color: white;
   padding: 20px 16px;
+  width: 100%;
+  margin: 0;
 }
 
 .heading::before {
@@ -237,16 +236,16 @@ padding: 20px;
 
 /* Common Section Styles */
 .message, .offer, .account, .welcome, .about-us, .contact-info, 
-.page-header, .resources, .partners, .findmentor {
+.page-head, .resources, .partners, .findmentor {
   padding: 20px ;
   margin: 0 auto;
 }
 
-.message, .page-header {
+.message, .page-head {
   text-align: center;
 }
 
-.message::after, .page-header::after {
+.message::after, .page-head::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -256,7 +255,7 @@ padding: 20px;
   border-radius: 2px;
 }
 
-.message h1, .page-header h1 {
+.message h1 {
   font-size: 40px;
   margin-bottom: 16px;
   background: linear-gradient(135deg,  #2563eb,  #7c3aed);
@@ -266,7 +265,7 @@ padding: 20px;
   font-weight: 800;
 }
 
-.message p, .page-header p {
+.message p, .page-head p {
   font-size: 19px;
   color:  #4b5563;
   max-width: 800px;
@@ -359,32 +358,34 @@ padding: 20px;
   min-height: 120px;
   resize: vertical;
 }
-
 .account button[type="submit"],.contact-info button[type="submit"] {
   background: linear-gradient(135deg,#10b981,  #059669);
   color: white;
-  padding: 20px 32px;
   border-radius: 50px;
-  font-weight:200;
   font-size: 18px;
-  width: 30%;
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  padding: 16px 32px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 16px;
 }
 .video-continer h2{
   margin-left: 40px;
 }
-.social-btn{
-  background: linear-gradient(135deg,#10b981,  #059669);
+.social-btn {
+  width: 30px;
+  height: 40px;
+  background: linear-gradient(135deg, #10b981, #059669);
   color: white;
-  padding:8px;
-  border-radius: 50px;
-  font-weight: 200;
-  font-size: 18px;
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
-  width: 5%;
-  gap: 20px;
+  padding:10px; /* added horizontal padding */
+  border: none;
+  border-radius: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  flex: 1; /* allows even width in row mode */
+  min-width: 0; /* prevents overflow */
 }
-
 .account button[type="submit"]:hover ,.contact-info button[type="submit"]:hover{
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(16, 185, 129, 0.4);
@@ -394,13 +395,13 @@ padding: 20px;
 /* Card Layouts with Vibrant Colors */
 .mentor-grid, .resources-grid, .workshop-list, .card{
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
-.template {
+.template{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* adjust spacing between cards */
@@ -417,7 +418,7 @@ padding: 20px;
   margin: 20px 20px 20px 20px;
   justify-items: center;
 }
-.impact-cards,.contact-info,.in-action,.workshop-list{
+.impact-cards,.contact-info,.in-action,.workshop-list,.img-message{
   background: linear-gradient(135deg, #ffffff, #f8fafc);
   padding: 32px;
   border-radius: 20px;
@@ -436,8 +437,14 @@ padding: 20px;
   margin: 20px;
   border-left: 4px solid  #3b82f6;
 }
+.img-message{
+  border-left: 4px solid  #3b82f6;
+}
 .career-talks,.interactive,.matching{
   gap: 10px;
+}
+.img-message,image{
+  width:50% ;
 }
 
 .mentor-card, .resource-card, .workshop-card, .partner1, .partner2, .partner3,
@@ -559,7 +566,7 @@ video:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-.links{
+.video-cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* adjust spacing between cards */
@@ -590,14 +597,14 @@ video:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Contact Form */
-.contact-info form {
+.contact-info form,.image-card1,.image-message {
   background: linear-gradient(135deg,#ffffff, #f8fafc);
   padding: 40px;
   border-radius: 20px;
   box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
   margin-top: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
 }
 
 .contact-info label,.Social-meadia-links label,.Email label,.phone label {
@@ -622,9 +629,23 @@ video:hover {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
-/* Reduce video height on large screens only */
-@media (min-width: 992px) {
-  .video-shorter {
-    --bs-aspect-ratio: 35% !important;
+@media (max-width: 667px) {
+  .video-cards {
+    display: block !important;
+  }
+  .social-btn {
+    width: 20%;
+    max-width: 200px;
+    margin: 0 auto; /* center on mobile */
+    margin: 20px;
+   height: 40px;
+  }
+  }
+@media (max-width: 576px) {
+  .logo-img {
+    max-width: 150px; /* smaller on mobile */
   }
 }
+  
+
+

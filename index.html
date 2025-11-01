@@ -10,22 +10,23 @@
 <body>
   <section>
     <!-- Header -->
-     <section class="pahe-head">
-<div class="heading text-center py-3 px-2">
+     <section class="page-head">
+        <div class=" head logo text-center py-2">
+         <img src="media/logo.jpeg" alt="FutureLink Academy" class="img-fluid logo-img">
+      </div>
+   <div class="heading text-center py-3 px-2">
   <h1 class="mb-1">Future Link Academy</h1>
   <h5 class="mb-3">Quality Education Initiative</h5>
-  
   <!-- Navigation Links -->
   <ul class="d-flex flex-wrap justify-content-center align-items-center list-unstyled gap-2 mb-3">
     <li><a href="resources.html" class="btn btn-outline-secondary btn-sm px-3">Workshop Calendar</a></li>
     <li><a href="resources.html" class="btn btn-outline-secondary btn-sm px-3">Resources</a></li>
   </ul>
-
-  <!-- Sign Up Button -->
+<!-- Sign Up Button -->
   <a href="signup.html" class="btn btn-primary px-4 py-2 text-white text-decoration-none d-inline-block">
     Sign Up
   </a>
-</div>
+    </div>
 </section>
     <!-- Welcome Section -->
    <!-- Welcome Video -->
@@ -125,13 +126,20 @@
     </section>
 
     <!-- Image Section -->
-  <div class="card1 py-4 bg-light text-center">
+<section class="image-message py-5 bg-light">
   <div class="container">
-    <h2 class="mb-3">Students participating in a FutureLink Academy workshop</h2>
-    <img src="media/R.jpeg" alt="Students in workshop" class="img-fluid rounded" style="max-width: 100%; height: auto; max-height: 400px;">
+    <div class="image-card">
+    <div class="row g-4 align-items-center">
+      <div class=" image col-12 col-lg-6">
+        <h2 class="mb-3">Students participating in a FutureLink Academy workshop</h2>
+        <img src="media/R.jpeg" alt="Students in workshop" class="img-fluid rounded w-100"style="max-height: 400px; object-fit: cover;">
+         <h3 class="mb-3">Empowering Futures, One Connection at a Time</h3>
+        <p>At Future Link Academy, we believe that every student deserves access to mentorship, practical skills, and career inspiration—regardless of geography or background. Our platform bridges classrooms with real-world experience, sparking confidence and possibility through every workshop, talk, and mentorship match.</p>
+      </div>
+    </div>
+    </div>
   </div>
-</div>
-
+</section>
     <!-- Contact Section -->
      <section class="contact">
     <div class="contact-section py-5">
@@ -150,15 +158,13 @@
               <a href="tel:+256743905016" class="d-block">+256 743 905 016</a>
             </div>
             <div class="mb-4">
-              <label class="form-label">Social Media:</label>
-              <div class="d-flex gap-2">
-                <button type="button" class="social-btn btn btn-outline-secondary">LI</button>
-                <button type="button" class=" social-btn btn btn-outline-secondary">IG</button>
-                <button type="button" class="social-btn btn btn-outline-secondary">𝕏</button>
-                <button type="button" class="social-btn btn btn-outline-secondary">f</button>
-              </div>
-            </div>
-            </div>
+            <label class="form-label">Social Media:</label>
+<div class="d-flex flex-column flex-md-row gap-2">
+  <button type="button" class="social-btn btn">LI</button>
+  <button type="button" class="social-btn btn">IG</button>
+  <button type="button" class="social-btn btn">𝕏</button>
+  <button type="button" class="social-btn btn">f</button>
+</div>
 
             <h3 class="mt-4 mb-3">Send us a Message</h3>
             <form id="contactForm" class="contact-info">
