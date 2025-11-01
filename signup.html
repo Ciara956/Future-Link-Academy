@@ -1,122 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Future Link Academy|Sign Up</title>
-<link rel="stylesheet" href="css/style.css">
-	
+	<title>Future Link Academy | Sign Up</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 </head>
 <body>
   <section>
-      <div class="head">
-        <div class="logo">
-<img src="media/logo.jpeg" alt="FutureLink Academy">
-          <br>
+    <section class="page-head">
+   <div class="heading text-center py-3 px-3">
+  <h1>Future Link Academy</h1>
+  <h5>Quality Education Initiative</h5>
+  <ul class="d-flex flex-column flex-md-row justify-content-center list-unstyled my-3 gap-2 gap-md-4">
+    <li><a href="resources.html" id="Workshop Calendar">Workshop Calendar</a></li>
+    <li><a href="resources.html" id="Free Educational Tutorials">Resources</a></li>
+     </ul>
+      <div class="mt-2">
+        <a href="signup.html" class="btn btn-primary px-4 py-2 text-white text-decoration-none d-inline-block">Sign Up</a>
+      </div>
+     </div>
+</section>
+    <!-- Message -->
+  <section>
+    <div class="message text-center py-5 bg-light">
+      <div class="container">
+        <h1>Start Your Journey Today</h1>
+        <p class="lead">Take the first step toward transforming your educational and career future</p>
+      </div>
+    </div>
+  </section>
+    <!-- What You'll Get -->
+  <section>
+    <div class="offer py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">What You'll Get:</h3>
+        <ul class="row row-cols-1 row-cols-md-2 g-3">
+          <li class="col">Personalized mentorship matching</li>
+          <li class="col">Access to weekly skill-building workshops</li>
+          <li class="col">Career guidance and industry insights</li>
+          <li class="col">Professional networking opportunities</li>
+          <li class="col">Free educational resources and tools</li>
+          <li class="col">YouTube tutorial library</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <!-- Sign Up Form -->
+<section class="sign-up-form">
+    <div class="account py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <h1 class="text-center">Create Your Account</h1>
+            <p class="text-center mb-4">Join our community of students, mentors, and institutions making a difference</p>
+            <form>
+              <div class="mb-3">
+                <label for="userType" class="form-label">I am a:</label>
+                <select id="userType" class="form-select" required>
+                  <option value="">Select your role</option>
+                  <option value="Student">High School Student</option>
+                  <option value="University">University Student</option>
+                  <option value="Professional">Working Professional</option>
+                  <option value="Retired">Retired Professional</option>
+                  <option value="Educator">Educator/School Staff</option>
+                  <option value="Institution">Educational Institution</option>
+                  <option value="Ngo">NGO/Organization</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" class="form-control" placeholder="Enter your username" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label">Location (City, Country)</label>
+                <input type="text" id="location" class="form-control" placeholder="Enter your location" required>
+              </div>
+              <div class="mb-3">
+                <label for="interests" class="form-label">Areas of Interest (for students) or Expertise (for mentors)</label>
+                <textarea id="interests" class="form-control" rows="3" placeholder="e.g., Technology, Healthcare, Finance, Education, etc."></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class=" create-bn btn btn-primary create account">Create Account</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-   <div class="heading">
-        <h1>Future Link Academy</h1>
-        <h5>Quality Education Initiative</h5>
-         <ul>
-           <li><a href="resources.html" id="Workshop Calendar">Workshop Calender</a></li>
-           <li><a href="resources.html" id="Free Educational Tutorials">Resources</a></li>
-         </ul>
-         <button><a href="signup.html"> Sign Up</a></button>
     </div>
-  <div class="message">
-    <h1>Start Your Journey Today</h1>
-    <p>Take the first step toward transforming your educational and career future</p>
-  </div>
-  <div class="offer">
-    <h3 >What You'll Get:</h3>
-     <ul >
-     <li > Personalized mentorship matching</li>
-     <li > Access to weekly skill-building workshops</li>
-     <li > Career guidance and industry insights</li>
-     <li > Professional networking opportunities</li>
-     <li > Free educational resources and tools</li>
-     <li > YouTube tutorial library</li>
-    </ul>  
-  </div>
-  <div class="account">
-    <h1>Create Your Account</h1>
-    <p>Join our community of students, mentors, and institutions making a difference</p>
-      <form >
-        <label for="userType">I am a:</label>
-        <select id="userType" required>
-        <option value="">Select your role</option>
-        <option value="Student">High School Student</option>
-        <option value="University">University Student</option>
-        <option value="Professional">Working Professional</option>
-        <option value="Retired">Retired Professional</option>
-        <option value="Educator">Educator/School Staff</option>
-        <option value="Institution">Educational Institution</option>
-        <option value="Ngo">NGO/Organization</option>
-        </select>
-        <br> 
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" placeholder="Enter your full name" required>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Create a password" required>
-        <label for="location">Location (City, State)</label>
-        <input type="text" id="location" placeholder="Enter your location" required>
-        <label for="interests">Areas of Interest (for students) or Expertise (for mentors)</label>
-        <br>
-        <textarea id="interests" placeholder="e.g., Technology, Healthcare, Finance, Education, etc."></textarea>
-        <button type="submit" class="create account" >Create Account</button>
-      </form>
-</div>
-<div class="findmentor">
- <h1>Find a mentor</h1>
-      <h3>Start Your Journey Today</h3>
-                <p>Connect with experienced professionals who can guide your career journey</p>
-                <h3>Sarah Namatovu</h3>
-                 <button class="primary" >Request Mentorship</button>
-                 <h3>Michael J Mukisa</h3>
-                 <button class="primary">Request Mentorship</button>
-                 <h3>Aisha Harit</h3>
-                 <button class="primary">Request Mentorship</button>
-                 <h3>David Tomason</h3>
-                 <button class="primary" >Request Mentorship</button> 
-</div>
-<div class="foot-container">
-    <div class="foot">
-      <h3>Future Link Academy</h3>
-      <p>Bridging the gap between education and opportunity for underserved communities worldwide.</p>
-    </div>
-  <div class="links">
-    <div class="quick-links">
-       <h3>Quick Links</h3>
-      <ul>
-      <li><a href="home.html" >Home</a></li>
-       <li><a href="signup.html" >Sign up</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="partners.html" >Our partners</a></li>
-      </ul>
+</section>
+    <!-- Find a Mentor Preview -->
+<section class="find-a-mentor">
+    <div class="findmentor py-5">
+      <div class="container">
+        <h1 class="text-center">Find a Mentor</h1>
+        <h3 class="text-center">Start Your Journey Today</h3>
+        <p class="text-center mb-4">Connect with experienced professionals who can guide your career journey</p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col text-center">
+            <h3>Sarah Namatovu</h3>
+            <button class="primary w-100 mt-2">Request Mentorship</button>
+          </div>
+          <div class="col text-center">
+            <h3>Michael J Mukisa</h3>
+            <button class="primary w-100 mt-2">Request Mentorship</button>
+          </div>
+          <div class="col text-center">
+            <h3>Aisha Harit</h3>
+            <button class="primary w-100 mt-2">Request Mentorship</button>
+          </div>
+          <div class="col text-center">
+            <h3>David Tomason</h3>
+            <button class="primary w-100 mt-2">Request Mentorship</button>
+          </div>
+        </div>
       </div>
-      <div class="students">
-        <h3>For Students</h3>
-      <ul>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="partners.html" id="Find Your Perfect Mentor">Find a Mentor</a></li>
-      <li><a href="resources.html" id="Workshop Calendar">Workshop Calendar</a></li>
-     </ul>
+    </div>
+</section>
+    <!-- Footer -->
+     <section class="page-foot">
+      <div class="foot-container mt-5">
+      <div class="foot py-4 bg-dark text-light">
+        <div class="container text-center">
+          <h3>Future Link Academy</h3>
+          <p>Bridging the gap between education and opportunity for underserved communities worldwide.</p>
+        </div>
       </div>
-      <div class="for-mentors">
-<h3>For Mentors</h3>
-    <ul>
-    <li><a href="signup.html">Become a Mentor</a></li>
-    <li><a href="resources.html">Training resources</a></li>
-    </ul>
+      <div class="links py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="signup.html">Sign up</a></li>
+                  <li><a href="resources.html">Resources</a></li>
+                  <li><a href="partners.html">Our partners</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="students">
+                <h3>For Students</h3>
+                <ul class="list-unstyled">
+                  <li><a href="signup.html">Sign Up</a></li>
+                  <li><a href="partners.html" id="Find Your Perfect Mentor">Find a Mentor</a></li>
+                  <li><a href="resources.html" id="Workshop Calendar">Workshop Calendar</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="for-mentors">
+                <h3>For Mentors</h3>
+                <ul class="list-unstyled">
+                  <li><a href="signup.html">Become a Mentor</a></li>
+                  <li><a href="resources.html">Training resources</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy text-center py-3 bg-light">
+        <p>&copy; 2025 Future Link Academy. All rights reserved. | Quality Education Initiative</p>
+      </div>
     </div>
-    </div>
-  <div class="copy">
-<p>&copy; 2025 Future Link Academy. All rights reserved. | Quality Education Initiative</p>
-  </div>
-</div>
-</section>       
+  </section>
+  </section>
 </body>
 </html>

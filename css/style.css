@@ -29,8 +29,13 @@ img {
   height: auto;
   border-radius: 20px
 }
+.contact{
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  width: 100%;
+  margin: 20px;
+}
 
-a {
+.heading a,.foot-container a,.template-btn a {
   text-decoration: none;
   color: inherit;
   }
@@ -55,7 +60,7 @@ button::after {
   background: linear-gradient(135deg, #667eea 0%, #8a47cd 100%);
   padding: 16px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  height: 50px;
+  height: auto;
 }
 .logo img {
   height: 30px;
@@ -68,7 +73,6 @@ button::after {
 }
 
 .heading {
-  height: 200px;
   background: linear-gradient(135deg,#517edf,#7c3aed );
   color: white;
   padding: 20px 16px;
@@ -131,7 +135,7 @@ button::after {
   float: right;
 }
 
-.heading button,.contact-info button[type="button"],.btn-secondary {
+.heading button,.mentor-btn {
   background: linear-gradient(135deg, #f97316, #f43f5e);
   color: white;
   padding: 10px;
@@ -140,12 +144,26 @@ button::after {
   font-size: 18px;
   box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
 }
-
-.heading button:hover,.contact-info button[type="button"]:hover {
+.mentor-btn {
+  text-decoration: none;
+ 
+}
+.contact-info button[type="button"]{
+  justify-content: center;
+  background: linear-gradient(135deg, #f97316, #f43f5e);
+  color: white;
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); 
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.heading button:hover,.contact-info button[type="button"]:hover,.mentor-btn:hover {
   box-shadow: 0 12px 25px rgba(239, 68, 68, 0.4);
   background: linear-gradient(135deg,  #ea580c, #ef4444);
 }
-.contact-info button[type="button"],.btn-secondary{
+.contact-info button[type="button"],.mentor-btn{
   padding: 15px;
   margin: 10px;
   display:inline-flex;
@@ -161,7 +179,7 @@ button::after {
   color: #333333;
 }
 
-.impact-cards,.resources-grid,.video-cards{
+.impact-cards,.resources-grid{
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -170,6 +188,14 @@ button::after {
   display: flex;
   flex-wrap: wrap;
 }
+.video-cards{
+padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 20px;
+}
+
 .video{
   background-color: #ffffff;
   border-radius: 10px;
@@ -179,23 +205,23 @@ button::after {
   display: block;
 }
 
-.card {
+.card1 {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 300px;
- text-align: center;
+  text-align: center;
   transition: transform 0.3s ease;
   display: grid;
   grid-template-columns: 3,1f;
   
 }
-.card:hover {
+.card1:hover {
   transform: translateY(-5px);
 }
 
-.card p {
+.card1 p {
   font-style: italic;
   margin-bottom: 10px;
   color: #444444;
@@ -203,7 +229,7 @@ button::after {
   line-height: 24px;
 }
 
-.card span {
+.card1 span {
   font-weight: bold;
   color: #666666;
   font-size: 14px;
@@ -227,7 +253,7 @@ button::after {
   left: 50%;
   width: 100px;
   height: 4px;
-   border-radius: 2px;
+  border-radius: 2px;
 }
 
 .message h1, .page-header h1 {
@@ -289,7 +315,7 @@ button::after {
 }
 
 /* Form Styles */
-.account form {
+.account form,.cont {
   background: linear-gradient(135deg,#ffffff, #f8fafc);
   padding: 40px;
   border-radius: 20px;
@@ -297,6 +323,10 @@ button::after {
   margin-top: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
+}
+.cont{
+  margin: 20px;
+  padding: 20px;
 }
 
 .account label {
@@ -335,10 +365,24 @@ button::after {
   color: white;
   padding: 20px 32px;
   border-radius: 50px;
-  font-weight: 700;
+  font-weight:200;
   font-size: 18px;
   width: 30%;
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+.video-continer h2{
+  margin-left: 40px;
+}
+.social-btn{
+  background: linear-gradient(135deg,#10b981,  #059669);
+  color: white;
+  padding:8px;
+  border-radius: 50px;
+  font-weight: 200;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  width: 5%;
+  gap: 20px;
 }
 
 .account button[type="submit"]:hover ,.contact-info button[type="submit"]:hover{
@@ -349,21 +393,31 @@ button::after {
 
 /* Card Layouts with Vibrant Colors */
 .mentor-grid, .resources-grid, .workshop-list, .card{
- display: grid;
+  display: grid;
   grid-template-columns:1fr;
   gap: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
-.video-cards,.template {
-   display: grid;
+.template {
+  display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* adjust spacing between cards */
   margin-right: 20px;
 }
 
-.our-story,.career-talks,.interactive,.matching,.impact-cards,.contact-info,.in-action,.workshop-list{
+.our-story,.career-talks,.interactive,.matching{
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(3, 1, 1, 0.5);
+  width: 90%;
+  margin: 20px 20px 20px 20px;
+  justify-items: center;
+}
+.impact-cards,.contact-info,.in-action,.workshop-list{
   background: linear-gradient(135deg, #ffffff, #f8fafc);
   padding: 32px;
   border-radius: 20px;
@@ -371,12 +425,11 @@ button::after {
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 100%;
   margin: 20px;
-  margin-right: 20px;
 }
 .contact-info button{
     width: 30%;
 }
-.career-talks,.interactive,.matching,.card{
+.career-talks,.interactive,.matching,.card1{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -407,7 +460,7 @@ button::after {
   top: 0;
   left: 0;
   right: 0;
-   background: linear-gradient(90deg, #2563eb, #8b5cf6);
+  background: linear-gradient(90deg, #2563eb, #8b5cf6);
 }
 
 .mentor-card:hover, .resource-card:hover, .workshop-card:hover {
@@ -458,7 +511,7 @@ button::after {
 }
 
 /* Button Styles with Different Colors */
-.primary, .resource-card button, .workshop-card button {
+.primary, .resource-card button, .workshop-card button,.template-btn {
   background: linear-gradient(135deg, #2563eb,  #3b82f6);
   color: white;
   padding: 16px 32px;
@@ -469,7 +522,7 @@ button::after {
   box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
 }
 
-.primary:hover, .resource-card button:hover, .workshop-card button:hover {
+.primary:hover, .resource-card button:hover, .workshop-card button:hover,.template-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
   background: linear-gradient(135deg, #1d4ed8, #2563eb);
@@ -487,9 +540,9 @@ video:hover {
   transform: scale(1.02);
   box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
-.welcome video{
-width: 600px;
-height: 338px;
+.Welcome-video{
+  width: 40%;
+  height: 200px;
 }
 
 /* Footer Styles with Gradient */
@@ -500,18 +553,14 @@ height: 338px;
   margin: 10px;
   display: block;
   height: fit-content;
-}
-
-.foot-container::before {
-  background: linear-gradient(90deg,  #2563eb, #8b5cf6, #10b981,#f97316);
-}
-
+  border-radius: 25px;
+ }
 .foot {
   max-width: 1200px;
   margin: 0 auto;
 }
 .links{
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* adjust spacing between cards */
   margin-right: 20px;
@@ -535,7 +584,7 @@ height: 338px;
 }
 
 .copy {
-    display: block;
+  display: block;
   margin-top: 48px;
   padding-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -553,12 +602,12 @@ height: 338px;
 
 .contact-info label,.Social-meadia-links label,.Email label,.phone label {
   display: block;
-  margin: 8px;
+  margin: 20px;
   font-weight: 600;
   color:#1f2937;
 }
 
-.contact-info select, .contact-info input {
+.contact-info select, .contact-info input,.contact-info textarea {
   width: 100%;
   padding: 16px;
   margin-bottom: 24px;
@@ -573,4 +622,9 @@ height: 338px;
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
-
+/* Reduce video height on large screens only */
+@media (min-width: 992px) {
+  .video-shorter {
+    --bs-aspect-ratio: 35% !important;
+  }
+}
