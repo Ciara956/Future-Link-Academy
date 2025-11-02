@@ -296,7 +296,7 @@ padding: 20px;
 }
 
 /* Form Styles */
-.account form,.cont {
+.account form,.cont,.contact {
   background: linear-gradient(135deg,#ffffff, #f8fafc);
   padding: 40px;
   border-radius: 20px;
@@ -355,13 +355,14 @@ padding: 20px;
   margin-left: 40px;
 }
 .social-btn {
-  width: 30px;
-  height: 40px;
+  margin: 20px 20px;
+  width: 50px;
+  height: 50px;
   background: linear-gradient(135deg, #10b981, #059669);
   color: white;
-  padding:10px; /* added horizontal padding */
+  padding:15px 15px; 
   border: none;
-  border-radius: 100%;
+   border-radius: 100%;
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
@@ -430,7 +431,7 @@ padding: 20px;
 }
 
 .mentor-card, .resource-card, .workshop-card, .partner1, .partner2, .partner3,
-.career-goals, .resume-card, .interview-card,.findmentor {
+.career-goals, .resume-card, .interview-card,.findmentor,.coding-card {
   background: linear-gradient(135deg, #ffffff, #f8fafc);
   padding: 20px;
   border-radius: 20px;
@@ -580,6 +581,7 @@ video:hover {
 .contact-info label,.Social-meadia-links label,.Email label,.phone label {
   display: block;
   margin: 20px;
+  padding: 20px;
   font-weight: 600;
   color:#1f2937;
 }
