@@ -422,12 +422,14 @@ padding: 20px;
   flex-wrap: wrap;
   margin: 20px;
   border-left: 4px solid  #3b82f6;
+  
 }
 .img-message{
   border-left: 4px solid  #3b82f6;
 }
 .career-talks,.interactive,.matching{
   gap: 10px;
+  border:none;
 }
 .img-message,image{
   width:50% ;
@@ -623,6 +625,7 @@ video:hover {
   }
 }
   
+
 
 
 
