@@ -412,6 +412,7 @@ padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 100%;
   margin: 20px;
+  border-left: 4px solid  #3b82f6;
 }
 .contact-info button{
     width: 30%;
@@ -421,13 +422,14 @@ padding: 20px;
   flex-direction:row;
   flex-wrap: wrap;
   margin: 20px;
+  border-left: 4px solid  #3b82f6;
+  gap: 20px;
+
 }
 .img-message{
   border-left: 4px solid  #3b82f6;
 }
-.career-talks,.interactive,.matching,.ourstory{
-  border: none;
-  gap: 10px;
+.ourstory{
   border:none;
 }
 .img-message,image{
