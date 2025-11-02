@@ -48,6 +48,9 @@ button {
   font-family: inherit;
   font-weight: 600;
 }
+.page-header h1,.page-header p{
+  margin-left:20px;
+}
  .logo-img {
   max-width: 200px;
   height: auto;
@@ -418,7 +421,6 @@ padding: 20px;
   flex-direction:row;
   flex-wrap: wrap;
   margin: 20px;
-
 }
 .img-message{
   border-left: 4px solid  #3b82f6;
@@ -426,6 +428,7 @@ padding: 20px;
 .career-talks,.interactive,.matching,.ourstory{
   border: none;
   gap: 10px;
+  border:none;
 }
 .img-message,image{
   width:50% ;
@@ -601,6 +604,9 @@ video:hover {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 @media (max-width: 667px) {
+  h2{
+    margin:20px;
+  }
   .video-cards {
     display: block !important;
   }
@@ -618,5 +624,8 @@ video:hover {
   }
 }
   
+
+
+
 
 
