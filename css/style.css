@@ -28,12 +28,9 @@ section {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px
-}
+ }
 .contact{
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  width: 100%;
-  margin: 20px;
 }
 
 .heading a,.foot-container a,.template-btn a {
@@ -50,11 +47,6 @@ button {
   border: none;
   font-family: inherit;
   font-weight: 600;
-}
-
-button::after {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
 }
  .logo-img {
   max-width: 200px;
@@ -75,12 +67,6 @@ button::after {
   padding: 20px 16px;
   width: 100%;
   margin: 0;
-}
-
-.heading::before {
-  width: 100%;
-  height: 20%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
 }
 .heading h1 {
   font-size: 35px;
@@ -117,14 +103,6 @@ button::after {
   float: right;
 }
 
-.heading ul li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-}
 
 .heading ul li a:hover {
   background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.2));
@@ -193,6 +171,10 @@ padding: 20px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* adjust spacing between cards */
+  margin-right: 20px;
 }
 
 .video{
@@ -448,9 +430,9 @@ padding: 20px;
 }
 
 .mentor-card, .resource-card, .workshop-card, .partner1, .partner2, .partner3,
-.career-goals, .resume-card, .interview-card, .financial-card, .coding-card, .communication-card,.findmentor {
+.career-goals, .resume-card, .interview-card,.findmentor {
   background: linear-gradient(135deg, #ffffff, #f8fafc);
-  padding: 32px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -462,14 +444,12 @@ padding: 20px;
 
 .mentor-card::before, .resource-card::before, .workshop-card::before {
   content: '';
-  content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 4px; /*  Add height */
   background: linear-gradient(90deg, #2563eb, #8b5cf6);
+  border-radius: 20px 20px 0 0; /* Match card corners */
+  z-index: 1; /*  Ensure it's visible */
 }
-
 .mentor-card:hover, .resource-card:hover, .workshop-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -566,19 +546,12 @@ video:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-.video-cards{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* adjust spacing between cards */
-  margin-right: 20px;
-}
 .foot h3,.quick-links h3,.students h3,.for-mentors h3 {
   margin-bottom: 6px;
   color: #f59e0b;
   font-weight: 700;
   font-size: 21px;
   padding-bottom: 10px;
-  display: block;
 }
 .foot ul li a {
   color: #d1d5db;
@@ -589,14 +562,12 @@ video:hover {
   color: #f59e0b;
   transform: translateX(5px);
 }
-
 .copy {
   display: block;
   margin-top: 48px;
   padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(254, 254, 254, 0.763);
 }
-
 .contact-info form,.image-card1,.image-message {
   background: linear-gradient(135deg,#ffffff, #f8fafc);
   padding: 40px;
@@ -606,14 +577,12 @@ video:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-left: 20px;
 }
-
 .contact-info label,.Social-meadia-links label,.Email label,.phone label {
   display: block;
   margin: 20px;
   font-weight: 600;
   color:#1f2937;
 }
-
 .contact-info select, .contact-info input,.contact-info textarea {
   width: 100%;
   padding: 16px;
@@ -623,7 +592,6 @@ video:hover {
   font-family: inherit;
   font-size: 16px;
 }
-
 .contact-info select:focus, .contact-info input:focus {
   outline: none;
   border-color: #2563eb;
