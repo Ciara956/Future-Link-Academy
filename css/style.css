@@ -424,7 +424,7 @@ padding: 20px;
   gap: 20px;
 
 }
-.img-message{
+.img-message,.impact-cards{
   border-left: 4px solid  #3b82f6;
 }
 .container{
@@ -608,7 +608,7 @@ video:hover {
     margin:20px;
   }
   .video-cards {
-    display: block !important;
+    display: inline-block;
   }
   .social-btn {
     width: 20%;
