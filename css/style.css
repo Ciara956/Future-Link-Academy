@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  /* Resets default spacing for all elements */
 }
 
 body {
@@ -12,17 +12,18 @@ body {
   color: #1f2937;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   margin-right: 20px;
-  min-height: 100vh;
+  min-height: 100vh; /*Ensures page fills the full viewport height*/
 }
 
 section {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /*Prevents horizontal overflow (common with wide content )*/
 }
 
 img {
   max-width: 100%;
   height: auto;
+  /*Makes images responsive: never wider than container, keeps aspect ratio.*/
  }
 .contact{
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -31,6 +32,7 @@ img {
 .heading a,.foot-container a,.template-btn a {
   text-decoration: none;
   color: inherit;
+  /*Removes underlines, uses parent color*/
   }
 
 ul {
@@ -42,6 +44,7 @@ button {
   border: none;
   font-family: inherit;
   font-weight: 600;
+  /* Improves UX: shows hand cursor, inherits font, bold text, no default border*/
 }
 .page-header h1,.page-header p{
   margin-left:20px;
@@ -98,8 +101,7 @@ button {
   background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.3);
-  float: right;
-}
+ }
 
 
 .heading ul li a:hover {
@@ -197,7 +199,7 @@ padding: 20px;
   
 }
 .card1:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* lifts card on hover (micro-interaction)*/
 }
 
 .card1 p {
@@ -619,6 +621,7 @@ video:hover {
   }
 }
   
+
 
 
 
