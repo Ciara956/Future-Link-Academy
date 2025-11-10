@@ -6,10 +6,6 @@
   
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   line-height: 1.7;
@@ -623,6 +619,7 @@ video:hover {
   }
 }
   
+
 
 
 
